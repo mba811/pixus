@@ -1,0 +1,22 @@
+{
+	"path": {
+		"assets": "/assets",
+		"controllers": "/controllers",
+		"filters": "/filters",
+		"views": "/views",
+		"layouts": "/layouts",
+		"partials": "/partials",
+		"targets": "/targets"
+	},
+	
+	"viewExt": "tpl",
+	"useLayout": true,
+	"defaultLayout": "layout",
+	
+	"session": {
+		"key": "appsessionid",
+		"maxAge": 60000
+	},
+	
+	"account": "mytharcher@gmail.com"
+}

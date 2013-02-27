@@ -1,0 +1,18 @@
+{
+	"name": "pixus",
+	"description": "Picasa proxy server with Node.js",
+	"version": "0.0.1",
+	"main" : "app.js",
+	"private": true,
+	"dependencies": {
+		"express": "3.x",
+		"hogan-express": "0.3.x",
+		"rainbow": "0.1.0",
+    	"glob": "3.x",
+    	"google-oauth": "0.0.2"
+	},
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	}
+}
