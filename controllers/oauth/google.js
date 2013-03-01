@@ -17,7 +17,7 @@ exports.get = function (req, res, next) {
 	if (!req.session.access_token && !req.session.refresh_token) {
 		var authUrl = url.format({
 			protocol: req.protocol,
-			host: util.getHost(req),
+			host: req.host,
 			pathname: util.getPath(__filename)
 		});
 		
