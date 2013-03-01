@@ -20,6 +20,23 @@ exports.get = function (req, res, next) {
 	}
 	
 	var token = req.session.access_token;
+	
+	if (token) {
+		var client = new GDClient(googleAppId[0], googleAppId[1]);
+		client.setAccessToken(token);
+		client.get(PICASA_ALBUMS_URL, function(err, feed) {
+			if (err) {
+				res.send(500, err);
+			} else {
+				res.send(feed);
+			}
+		});
+	} else {
+		res.redirect('/');
+	}
+	
+	return;
+	
 	if (token) {
 		var result = [];
 		var proReq = https.request({

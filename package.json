@@ -9,7 +9,9 @@
 		"hogan-express": "0.3.x",
 		"rainbow": "0.1.0",
     	"glob": "3.x",
-    	"google-oauth": "0.0.2"
+    	"google-oauth": "0.0.2",
+    	"restler": "2.0.x",
+    	"gdata": "0.1.0"
 	},
 	"engines": {
 		"node": "0.8.x",
